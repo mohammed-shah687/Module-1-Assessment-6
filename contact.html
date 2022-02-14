@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+ <body>
+    <div class="background">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        
+    <div class="small-container">
+        <h2 class="title">Contact Us</h2>
+        <div class="row">
+        </div>
+    </div>
+<div class="container">
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Send Your Request</h3>
+            <form>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Mohammed Shah">
+            </div>
+            <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" placeholder="+27 768 905786">
+             </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="mohammedshah@gmail.com">
+            </div>
+            <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Product Demo">
+             </div>
+            </div>
+            <label>Message</label>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <h3>Reach Us</h3>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>mohammedshah@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>0768905786</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>#83, Hillview Road, Glenhills,<br>
+                    Stanger, KwaDukuza, 4449 </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+    <!------------js for toggle menu------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+    </div>
+    </body>
+</html>

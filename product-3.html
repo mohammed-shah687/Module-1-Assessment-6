@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!-------------single product details-------------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="products/product-3.jpg" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="products/product-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="products/product-3-1.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Watch</p>
+                <h1>Apple Watch Series 7 GPS + Cellular (41mm) - Graphite S/Steel Case with Abyss Blue Sport Band</h1>
+            <div class="avalible">
+                <p>Only 3 Avalible In Stock</p>
+            </div>
+                <h4>R 14,999</h4>
+                <p></p>
+                <select>
+                    <option>Select Size</option>
+                    <option>40 mm</option>
+                    <option>41 mm</option>
+                    <option>44 mm</option>
+                </select>
+                <br/>
+                <input type="number" value="1">
+                <br/>
+                <a href="" class="btn">Buy Now</a>
+                <h3>Product Discription</h3>
+                <br>
+                <p>The biggest, most advanced Always-On Retina display. Measure your blood oxygen and take an ECG. With the most crack-resistant front crystal ever and dust resistance certification, it’s the most durable Apple Watch ever.</p>
+
+                
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <h2 class="title">Other Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product-1.html"><img src="products/product-1.jpg"></a>
+                <h4>Nike Men's Air Max Alpha Trainer 4 Training Shoes</h4>
+                <p>R 1,499</p>
+            </div>
+            <div class="col-4">
+                <a href="product-2.html"><img src="products/product-2.jpg"></a>
+                <h4>Ronex Training Shorts Red/White</h4>
+                <p>R 179</p>
+            </div>
+            <div class="col-4">
+                <a href="product-4.html"><img src="products/product-4.jpg"></a>
+                <h4>Reebok Men's Workout Ready Activchill T-Shirt - Semi Solar Gold</h4>
+                <p>R 579</p>
+            </div>
+            <div class="col-4">
+                <a href="product-5.html"><img src="products/product-5.jpg"></a>
+                <h4>Puma - Men's Train Activate Pant - Puma Black</h4>
+                <p>R 899</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="table">
+                    <h3>Product Information</h3>             
+                    <table class="center">
+                    <thead>
+                        <tr>
+                            <th>Categories</th>
+                            <td>Cellphones & Wearables / Wearables /<br> Smart Watches
+                                Computers & Tablets</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <th>Brands</th>
+                        <td>Apple</td>
+                    </tbody>
+                    <tbody>
+                        <th>Sports</th>
+                        <td>Fitness</td>
+                    </tbody>
+                    <tbody>
+                        <th>Warranty</th>
+                        <td>Limited (12 months)</td>
+                    </tbody>
+                    <tbody>
+                        <th>Materials</th>
+                        <td>Silicone / metal</td>
+                    </tbody>
+                    <tbody>
+                        <th>What's in the box</th>
+                        <td>1 x Apple Watch
+                            1 x Apple Watch Band<br>
+                            1 x USB-C Magnetic Fast Charging Cable</td>
+                    </tbody>
+                    <tbody>
+                        <th>Gender</th>
+                        <td>Unisex</td>
+                    </tbody>
+                    <tbody>
+                        <th>Colour Name</th>
+                        <td>Blue / silver</td>
+                    </tbody>
+                    <tbody>
+                        <th>Size</th>
+                        <td>41 mm</td>
+                    </tbody>
+                    <tbody>
+                        <th>Basic Colours</th>
+                        <td>silver</td>
+                    </tbody>
+                    <tbody>
+                        <th>Barcode</th>
+                        <td>194252569764</td>
+                    </tbody>
+                </table>
+            </div>
+    <!------------js for toggle menu------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+    <!------------------js for product gallary------------->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+       
+    </script>
+    </body>
+</html>
